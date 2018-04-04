@@ -1,0 +1,13 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">PelisApp</h1>
+    <p class="lead">Encuentra las mejores peliculas en Cartelera</p>
+  </div>
+</div>
+
+<div class="container">
+
+   <app-galeria [peliculas]="cartelera|slice:0:6" titulo="Preliculas en Cartelera"></app-galeria>
+   <app-galeria [peliculas]="populares|slice:0:6" titulo="Las mas populares"></app-galeria>
+   <app-galeria [peliculas]="populareskids|slice:0:6" titulo="Las mas populares de Niños"></app-galeria>
+</div><!--.container-->
